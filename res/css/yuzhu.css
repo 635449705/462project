@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: #333333;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.2;
+}
+
+header {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+}
+
+div, nav {
+    display: block;
+}
+
+a, a:active, a:focus, a:hover, a:link, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+/* class section */
+
+.main-body-width {
+    max-width: 1200px;
+}
+
+.main-body-top {
+    height: 30px;
+}
+
+.page-body-top {
+    height: 86px;
+}
+
+.align-center {
+    margin: 0 auto;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-shine {
+    color: #FF3300;
+}
+
+.text-input-font-family {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text-futura-font-family {
+    font-family: 'Futura-Lig', 'FuturaLig', 'Century Gothic', 'CenturyGothic', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
+.vertical-center {    
+    vertical-align: middle;
+}
+
+.row {
+    margin: 0 auto;
+}
+
+.row:before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row-next-margin-top {
+    margin-top: 40px;
+}
+
+.col-2 {
+    float: left;
+    width: 50%;
+}
+
+.top-bar {
+    background-color: #333;
+    padding: 5px 0;
+    color: white;
+    font-size: 16px;
+    letter-spacing: .1em;
+    border-bottom: 1px solid #555;
+}
+
+.link-wrapper {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.header-main-title {
+    font-size: 26px;
+    margin: 40px auto;
+    position: relative;
+    letter-spacing: -.04em;
+}
+
+.header-second-title {
+    font-size: 24px;
+    text-align: left;
+    position: relative;
+    padding: 13px 0;
+}
+
+.main-navigation-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+}
+
+.main-navigation {
+    white-space: nowrap;
+    max-width: 1676px;
+    width: 100%;
+    margin: auto;
+    padding: 0 25px;
+    margin-bottom: 50px;
+}
+
+.main-navigation-list {
+    margin: 0;
+    padding: 0;
+    width: calc(100% - 88px);
+    display: inline-block;
+}
+
+.main-navigation-item {
+    font-size: 20px;
+    letter-spacing: .08em;
+    margin: 10px 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.page-navigation-list {
+    margin-right: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.page-navigation-item {
+    font-size: 18px;
+    letter-spacing: .08em;
+    margin: 0 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-promo {
+    background-color: #444;
+    margin: 50px auto;
+    padding: 5px 0;
+    color: white;
+    font-size: 18px;
+    letter-spacing: .08em;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+    word-spacing: .15em;
+}
+
+.footer-link {
+    width: 30%;
+}
+
+.footer-link-item {
+    padding: 0 10px;
+}
+
+.footer-link-bar {
+    border-left: 1px solid #444;
+}
+
+.footer-copyright {
+    margin: 24px auto;
+    font-size: 12px;
+    margin-bottom: 50px;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-element {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 200px;
+}
+
+.form-search-box {
+    width: 50%;
+    background-color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.form-search {
+    width: 100%;
+    border: 1px solid #aaa;
+    display: inline-block;
+}
+
+.form-input-search-input {
+    font-family: 'Futura-Lig', 'FuturaLig', 'Century Gothic', 'CenturyGothic', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+    font-size: 16px;
+    height: 60px;
+    width: calc(100% - 50px);
+    padding: 20px;
+    border: none;
+}
+
+.form-input-search-submit-icon {
+    padding: 20px;
+    background: url(../image/submit_search.svg) no-repeat center center;
+    background-size: 30px 30px;
+    cursor: pointer;
+    border: none;
+}
+
+.bottom-border {
+    border-bottom: 1px solid #444;
+}
+
+.page-title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.button {
+    font: inherit;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    line-height: 1.5;
+    padding: 12px 24px;
+    min-height: 44px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-rendering: auto;
+    text-indent: 0px;
+    text-shadow: none;
+    cursor: pointer;
+    font-weight: 600;
+    outline: 0;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #444;
+    transition: background-color .2s;
+    display: inline-block;
+    list-style: none;
+    min-width: 0;
+    word-spacing: normal;
+}
+
+.button:hover {
+    background-color: #FF3300;
+}
+
+.contact-body {
+    width: 800px;
+}
+
+.contact-h2 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.contact-email-form {
+    display: block;
+    max-width: 100%;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin: 24px auto;
+    padding: 20px 0 20px 20px;
+}
+
+.contact-input-info {
+    margin-bottom: 20px;
+    font-size: 14px;
+    height: 44px;
+    vertical-align: middle;
+    width: calc(100% - 20px);
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-input-textarea-height {
+    height: 200px;
+}
+
+.main-bestsellers {
+    margin: 80px auto;
+}
+
+.bestsellers-title {
+    margin-bottom: 50px;
+}
+
+.book-decor {
+    border: 1px solid #ccc;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.book-details {
+    position: relative;
+    margin-right: 42px;
+    height: 260px;
+    padding-top: 30px;
+}
+
+.book-title {
+    font-weight: 700;
+    font-size: 20px;
+    color: #333;
+}
+
+.book-version {
+    font-size: 16px;
+    color: #555;
+}
+
+.book-author {
+    margin-top: 6px;
+    font-size: 12px;
+}
+
+.book-isbn {
+    position: absolute;
+    bottom: 0;
+    font-size: 16px;
+    color: #333;
+}
