@@ -42,7 +42,22 @@ ul {
     padding-inline-start: 40px;
 }
 
+input[type="checkbox"] {
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+    line-height: normal;
+    box-sizing: border-box;
+    padding: 0;
+}
+
 /* class section */
+
+/* added by Yuzhu */
 
 .main-body-width {
     max-width: 1200px;
@@ -76,6 +91,10 @@ ul {
     color: white;
 }
 
+.text-light-grey {
+    color: #888;
+}
+
 .text-shine {
     color: #FF3300;
 }
@@ -96,13 +115,13 @@ ul {
     margin: 0 auto;
 }
 
-.row:before {
+.row::before {
     content: "";
     display: table;
     clear: both;
 }
 
-.row:after {
+.row::after {
     content: "";
     display: table;
     clear: both;
@@ -126,7 +145,7 @@ ul {
     border-bottom: 1px solid #555;
 }
 
-.link-wrapper {
+.topbar-ele-wrapper {
     display: inline-block;
     vertical-align: middle;
 }
@@ -183,6 +202,11 @@ ul {
     vertical-align: top;
 }
 
+.main-navigation-item:hover {
+    color: #FF3300;
+    transition: .15s;
+}
+
 .page-navigation-list {
     margin-right: 0;
     padding: 0;
@@ -195,6 +219,16 @@ ul {
     margin: 0 30px;
     display: inline-block;
     vertical-align: top;
+}
+
+.page-navigation-item-current {
+    font-weight: 700;
+    color: #FF3300;
+}
+
+.page-navigation-item:hover {
+    color: #FF3300;
+    transition: .15s;
 }
 
 .footer-promo {
@@ -386,3 +420,129 @@ ul {
     font-size: 16px;
     color: #333;
 }
+
+.login-signup-body {
+    width: 420px;
+}
+
+.login-signup-email-form {
+    display: block;
+    max-width: 100%;
+}
+
+.login-signup-input-label {
+    margin-top: 20px;
+    font-size: 18px;
+    vertical-align: middle;
+    width: 100%;
+    display: inline-block;
+}
+
+.login-signup-input-info {
+    margin-top: 5px;
+    font-size: 16px;
+    height: 44px;
+    vertical-align: middle;
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.login-forgot {
+    margin-top: 5px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.login-remember {
+    margin-top: 20px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.login-signup-button {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.login-register-box {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.login-register {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 550;
+    display: inline-block;
+}
+
+.login-register:hover {
+    transition: .1s;
+    color: #FF3300;
+}
+
+.signup-agree {
+    margin-top: 20px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.signup-login-box {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.signup-login {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 550;
+    display: inline-block;
+}
+
+.signup-login:hover {
+    transition: .1s;
+    color: #FF3300;
+}
+
+.about {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.about h2 {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.about p {
+    text-align: justify;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 40px;
+    font-size: 18px;
+    letter-spacing: -0.04em;
+    word-spacing: 0.1em;
+}
+
+.terms {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.terms p {
+    text-align: justify;
+    width: 100%;
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: -0.04em;
+    word-spacing: 0.1em;
+}
+
+/* added by Aaron */
+
+/* added by Guojing */
