@@ -1,31 +1,18 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 * {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* The grid: Three equal columns that floats next to each other */
+/* Create two equal columns that floats next to each other */
 .column {
   float: left;
-  width: 33.33%;
-  padding: 50px;
-  text-align: center;
-  font-size: 25px;
-  cursor: pointer;
-  color: white;
-}
-
-.containerTab {
-  padding: 20px;
-  color: white;
+  width: 50%;
+  padding: 10px;
 }
 
 /* Clear floats after the columns */
@@ -34,72 +21,115 @@ body {
   display: table;
   clear: both;
 }
-
-/* Closable button inside the container tab */
-.closebtn {
-  float: right;
+input[type=submit] {
+  background-color: #4CAF50;
   color: white;
-  font-size: 35px;
+  padding: 12px 20px;
+  border: none;
   cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the buttons */
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+.btn.active {
+  background-color: #666;
+  color: white;
 }
 </style>
 </head>
 <body>
 
-<div style="text-align:center">
-  <h2>Shopping Cart</h2>
-  <p>Click on the orders below:</p>
-</div>
+<h2>Shopping Cart</h2>
 
-<!-- Three columns -->
+<p>Click on a button to choose list view or grid view.</p>
+
+<div id="btnContainer">
+  <button class="" onclick="listView()"><i class="fa fa-bars"></i> List</button> 
+  <button class=" active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+</div>
+<br>
+
 <div class="row">
-  <div class="column" onclick="openTab('b1');" style="background:green;">
-    Information System 9th Edition 
+  <div class="column" style="background-color:#aaa;">
+      <img src="https://635449705.github.io/AaronJi/omisbook2.png" height="130" width="100" class="media-object img-thumbnail">
+   
+     <p>  <span><strong>Quanlity</strong></span> <span class="label label-info"> 1 </span><br> </p>
+     <p>  <span><strong>Price</strong></span> <span class="label label-info"> $153.5 </span><br> </p>
+      
   </div>
-  <div class="column" onclick="openTab('b2');" style="background:blue;">
-    Information System 4th Edition
-  </div>
-  <div class="column" onclick="openTab('b3');" style="background:red;">
-    Information System 7th Edition
+  <div class="column" style="background-color:#bbb;">
+      <img src="https://635449705.github.io/AaronJi/omisbook4.png" height="130" width="100" class="media-object img-thumbnail">
+
+      <p>  <span><strong>Quanlity</strong></span> <span class="label label-info"> 2</span><br> </p>
+      <p>  <span><strong>Price</strong></span> <span class="label label-info"> $213.5 </span><br> </p>
+    
   </div>
 </div>
 
-<!-- Full-width columns: (hidden by default) -->
-<div id="b1" class="containerTab" style="display:none;background:green">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <div class="col-md-1"><img src="https://635449705.github.io/AaronJi/omisbook2.png" height="130" width="100" class="media-object img-thumbnail"></div>
-  <h2>Test Book Information System OMIS 845</h2>
-  <h2>Book Name: A Manager's Guide To Harnessing Technology </h2>
-  <p> Quantity : 2, cost: $223.13</p>
-</div>
+<div class="row">
+  <div class="column" style="background-color:#ccc;">
+      <img src="https://635449705.github.io/AaronJi/omisbook1.jpg" height="130" width="100" class="media-object img-thumbnail">
 
-<div id="b2" class="containerTab" style="display:none;background:blue">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <div class="col-md-1"><img src="https://635449705.github.io/AaronJi/omisbook3.png" height="130" width="100" class="media-object img-thumbnail"></div>
-  <h2>Test Book Information System OMIS 468</h2>
-  <h2>Book Name: A Manager's Guide To Harnessing Technology </h2>
-  <p> Quantity : 1, cost: $113.43</p>
-</div>
-
-<div id="b3" class="containerTab" style="display:none;background:red">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-   <div class="col-md-1"><img src="https://635449705.github.io/AaronJi/omisbook4.png" height="130" width="100" class="media-object img-thumbnail"></div>
- <h2>Test Book Information System OMIS 365</h2>
-  <h2>Book Name: A Manager's Guide To Harnessing Technology </h2>
-  <p> Quantity : 3, cost: $324.86</p>
+      <p>  <span><strong>Quanlity</strong></span> <span class="label label-info"> 2 </span><br> </p>
+      <p>  <span><strong>Price</strong></span> <span class="label label-info"> $125.84 </span><br> </p>
+      
+  </div>
+  <div class="column" style="background-color:#ddd;">
+      <img src="https://635449705.github.io/AaronJi/omisbook3.png" height="130" width="100" class="media-object img-thumbnail">
+   
+      <p>  <span><strong>Quanlity</strong></span> <span class="label label-info"> 1 </span><br> </p>
+      <p>  <span><strong>Price</strong></span> <span class="label label-info"> $120 </span><br> </p>
+    
+  </div>
 </div>
 
 <script>
-function openTab(tabName) {
-  var i, x;
-  x = document.getElementsByClassName("containerTab");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// List View
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "100%";
   }
-  document.getElementById(tabName).style.display = "block";
+}
+
+// Grid View
+function gridView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "50%";
+  }
+}
+
+/* Optional: Add active class to the current button (highlight it) */
+var container = document.getElementById("btnContainer");
+var btns = container.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
 }
 </script>
-<footer><button type="button" onclick="alert('Hello world!')">Check out</button></footer>
 
 </body>
-</html> 
+<footer><button type="button" class="btn" onclick="alert('Hello world!')">Check out</button></footer>
+</html>
+
