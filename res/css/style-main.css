@@ -63,11 +63,11 @@ input[type="checkbox"] {
 }
 
 .main-body-top {
-    height: 32px;
+    height: 35px;
 }
 
 .page-body-top {
-    height: 87px;
+    height: 90px;
 }
 
 .page-body-padding {
@@ -143,6 +143,11 @@ input[type="checkbox"] {
     width: 50%;
 }
 
+.col-3 {
+    float: left;
+    width: 33.33%;
+}
+
 .top-bar {
     background-color: #333;
     padding: 5px 0;
@@ -150,6 +155,10 @@ input[type="checkbox"] {
     font-size: 16px;
     letter-spacing: .1em;
     border-bottom: 1px solid #555;
+}
+
+.topbar-cart {
+    margin-right: 10px;
 }
 
 .topbar-ele-wrapper {
@@ -307,6 +316,11 @@ input[type="checkbox"] {
     width: 100%;
     border: 1px solid #aaa;
     display: inline-block;
+}
+
+.form-search:hover {
+    border: 1px solid rgb(255, 182, 164);
+    transition: 0.5s;
 }
 
 .form-input-search-input {
@@ -620,11 +634,11 @@ input[type="checkbox"] {
 
 .account-id-reset {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 16px;
     color: #333;
     cursor: pointer;
     display: inline-block;
-    padding: 4px 8px;
+    padding: 6px 12px;
     color: white;
     background: #444;
     border-radius: 4px;
@@ -750,35 +764,6 @@ input[type="checkbox"] {
     margin-bottom: 40px;
 }
 
-.cart-section h2 {
-    margin-bottom: 10px;
-}
-
-.cart-id-email {
-    font-size: 24px;
-    color: black;
-    margin-bottom: 10px;
-    display: inline-block;
-    width: 100%;
-}
-
-.cart-id-reset {
-    margin-top: 20px;
-    font-size: 20px;
-    color: #333;
-    cursor: pointer;
-    display: inline-block;
-    padding: 4px 8px;
-    color: white;
-    background: #444;
-    border-radius: 4px;
-}
-
-.cart-id-reset:hover {
-    background: #FF3300;
-    transition: .15s;
-}
-
 .cart-order-box {
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -812,6 +797,11 @@ input[type="checkbox"] {
     display: block;
     position: absolute;
     bottom: 0;
+}
+
+.cart-remove:hover {
+    background: #FF3300;
+    transition: .2s
 }
 
 .cart-order-item-price-box {
@@ -862,6 +852,206 @@ input[type="checkbox"] {
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
+.cart-order-type buy {
+    text-transform: uppercase;
+    text-align: center;
+    width: 40px;
+    margin: 5px auto;
+    font-size: 10px;
+    padding: 2px 4px;
+    color: white;
+    border-radius: 2px;
+    display: inline-block;
+    background: #FF3300;
+}
+
+.cart-order-type rent {
+    text-transform: uppercase;
+    text-align: center;
+    width: 40px;
+    margin: 5px auto;
+    font-size: 10px;
+    padding: 2px 4px;
+    color: white;
+    border-radius: 2px;
+    display: inline-block;
+    background: green;
+}
+
+.buy-rent-col {
+    margin-top: 10px;
+    width: calc(100% - 20px);
+    display: inline-block;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0 10px;
+}
+
+.buy-rent-col:hover {
+    border: 1px solid #FF3300;
+    transition: 0.2s;
+}
+
+.buy-rent-col-title {
+    font-size: 20px;
+}
+
+.buy-rent-body {    
+    border-top: 1px solid #888;
+    padding-top: 50px;
+    display: inline-block;
+    width: 100%;
+}
+
+.buy-rent-search {
+    margin-top: 50px;
+    width: calc(100% - 100px);
+}
+
+.buy-rent-or {
+    margin-top: 40px;
+    font-size: 36px;
+    color: #444
+}
+
+.buy-rent-find {
+    text-align: center;
+    width: 200px;
+    margin: 20px auto;
+    font-size: 18px;
+    padding: 8px 8px;
+    color: white;
+    background: #333;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.buy-rent-find:hover {
+    background: #FF3300;
+    transition: .2s;
+}
+
+
+.buy-rent-result-details {
+    padding-top: 30px;
+    display: inline-block;
+    width: calc(100% - 100px);
+}
+
+.buy-rent-result-section {
+    margin-bottom: 40px;
+}
+
+.buy-rent-result-order-box {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.buy-rent-result-order-item {
+    padding: 10px 24px;
+}
+
+.buy-rent-result-order-item-seperator {
+    border-top: 1px solid #ccc;
+}
+
+.buy-rent-result-order-details {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.buy-rent-result-remove {
+    text-align: center;
+    width: 100px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    text-transform: lowercase;
+    padding: 2px 4px;
+    color: white;
+    background: #FF3300;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+.buy-rent-result-remove:hover {
+    background: #333;
+    transition: .2s
+}
+
+.buy-rent-result-order-item-price-box {
+    margin-top: 8px;
+}
+
+.buy-rent-result-order-item-price-t {
+    font-size: 14px;
+    color: #555;
+}
+
+.buy-rent-result-order-item-price {
+    margin-left: 5px;
+    font-size: 20px;
+    color: black;
+}
+
+.buy-rent-result-book {
+    width: 130px;
+}
+
+.buy-rent-result-book-detail {
+    width: calc(100% - 150px);
+    position: relative;
+    height: 120px;;
+}
+
+.buy-rent-result-book-decor {
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.buy-rent-result-box {
+    border-top: 1px solid #333;
+    padding-top: 30px;
+    margin-top: 84px;
+}
+
+.buy-rent-result-t {
+    margin-left: 50px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.buy-rent-gotocart {
+    margin-right: 50px;
+    text-align: center;
+    width: 200px;
+    margin: 20px auto;
+    font-size: 18px;
+    padding: 8px 8px;
+    color: white;
+    background: #444;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.buy-rent-gotocart:hover {
+    background-color: black;
+    transition: 0.2s;
+}
+
+
+
+
+
 
 /* added by Aaron */
 
@@ -930,7 +1120,6 @@ hr {
     color: grey;
 }
 
-
 .checkout-button {
     margin-top: 20px;
     font: inherit;
@@ -963,6 +1152,7 @@ hr {
 
 .checkout-button:hover {
     background-color: #333;
+    transition: 0.3s;
 }
 
 /* added by Guojing */
