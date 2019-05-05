@@ -70,6 +70,10 @@ input[type="checkbox"] {
     height: 87px;
 }
 
+.page-body-padding {
+    padding: 0 10px;
+}
+
 .align-center {
     margin: 0 auto;
 }
@@ -104,6 +108,10 @@ input[type="checkbox"] {
 
 .text-futura-font-family {
     font-family: 'Futura-Lig', 'FuturaLig', 'Century Gothic', 'CenturyGothic', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
+.text-arial {
+    font-family: 'Arial', sans-serif;
 }
 
 .vertical-center {    
@@ -194,11 +202,16 @@ input[type="checkbox"] {
 }
 
 .main-navigation-item {
-    font-size: 20px;
+    font-size: 24px;
     letter-spacing: .08em;
-    margin: 10px 30px;
+    padding: 10px 30px;
     display: inline-block;
     vertical-align: top;
+    font-weight: 500;
+}
+
+.navigation-item-bar {
+    border-left: 1px solid #ccc;
 }
 
 .main-navigation-item:hover {
@@ -228,7 +241,7 @@ input[type="checkbox"] {
 .page-navigation-item {
     font-size: 18px;
     letter-spacing: .08em;
-    margin: 0 20px;
+    padding: 0 20px;
     display: inline-block;
     vertical-align: top;
 }
@@ -569,6 +582,164 @@ input[type="checkbox"] {
 .button-reset-pswd:hover {
     background-color: rgb(0, 187, 16);
 }
+
+.button-cancel {
+    margin-top: 20px;
+    width: 100%;
+    color: black;
+    background-color: #ccc;
+}
+
+.button-cancel:hover {
+    background-color: red;
+    color: white;
+}
+
+.account-details {
+    border-top: 1px solid #888;
+    padding-top: 30px;
+    display: inline-block;
+    width: 100%;
+}
+
+.account-section {
+    margin-bottom: 40px;
+}
+
+.account-section h2 {
+    margin-bottom: 10px;
+}
+
+.account-id-email {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.account-id-reset {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    padding: 4px 8px;
+    color: white;
+    background: #444;
+    border-radius: 4px;
+}
+
+.account-id-reset:hover {
+    background: #FF3300;
+    transition: .15s;
+}
+
+.account-order-box {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.account-order-item {
+    padding: 8px 16px;
+}
+
+.account-order-item-seperator {
+    border-top: 1px solid #ccc;
+}
+
+.account-order-date-t {
+    font-size: 14px;
+    color: #555;
+}
+
+.account-order-date {
+    margin-left: 5px;
+    font-size: 14px;
+    color: black;
+}
+
+.account-order-details {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.account-order-number {
+    font-size: 12px;
+    color: #555;
+    vertical-align: top;
+}
+
+.account-order-shipping {
+    margin-top: 5px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.account-order-shipping ready {
+    padding: 4px 8px;
+    color: white;
+    background: dodgerblue;
+    border-radius: 4px;
+}
+
+.account-order-shipping shipped {
+    padding: 4px 8px;
+    color: white;
+    background: rgb(0, 172, 0);
+    border-radius: 4px;
+}
+
+.account-order-shipping delivered {
+    padding: 4px 8px;
+    color: white;
+    background: #444;
+    border-radius: 4px;
+}
+
+.account-order-total-t {
+    font-size: 14px;
+    color: #555;
+}
+
+.account-order-total {
+    margin-left: 5px;
+    font-size: 14px;
+    color: black;
+    font-weight: 700;
+}
+
+.account-order-shipping-fee {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #555;
+    vertical-align: top;
+}
+
+.account-order-item-price-box {
+    margin-top: 8px;
+}
+
+.account-order-item-price-t {
+    font-size: 14px;
+    color: #555;
+}
+
+.account-order-item-price {
+    margin-left: 5px;
+    font-size: 14px;
+    color: black;
+}
+
+.account-order-page {
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+    text-align: right;
+    color: #444;
+}
+
 
 /* added by Aaron */
 
