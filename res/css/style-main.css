@@ -1,0 +1,1158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: #333333;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.2;
+    cursor: default;
+}
+
+header {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+}
+
+div, nav {
+    display: block;
+}
+
+a, a:active, a:focus, a:hover, a:link, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+input[type="checkbox"] {
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+    line-height: normal;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* class section */
+
+/* added by Yuzhu */
+
+.main-body-width {
+    max-width: 1200px;
+}
+
+.main-body-top {
+    height: 35px;
+}
+
+.page-body-top {
+    height: 90px;
+}
+
+.page-body-padding {
+    padding: 0 10px;
+}
+
+.align-center {
+    margin: 0 auto;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-light-grey {
+    color: #888;
+}
+
+.text-shine {
+    color: #FF3300;
+}
+
+.text-input-font-family {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text-futura-font-family {
+    font-family: 'Futura-Lig', 'FuturaLig', 'Century Gothic', 'CenturyGothic', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
+.text-arial {
+    font-family: 'Arial', sans-serif;
+}
+
+.vertical-center {    
+    vertical-align: middle;
+}
+
+.row {
+    margin: 0 auto;
+}
+
+.row::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row-next-margin-top {
+    margin-top: 40px;
+}
+
+.col-2 {
+    float: left;
+    width: 50%;
+}
+
+.col-3 {
+    float: left;
+    width: 33.33%;
+}
+
+.top-bar {
+    background-color: #333;
+    padding: 5px 0;
+    color: white;
+    font-size: 16px;
+    letter-spacing: .1em;
+    border-bottom: 1px solid #555;
+}
+
+.topbar-cart {
+    margin-right: 10px;
+}
+
+.topbar-ele-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.title-cursor-wrapper {
+    cursor: default;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.header-main-title {
+    font-size: 26px;
+    margin: 40px auto;
+    position: relative;
+    letter-spacing: -.04em;
+}
+
+.header-second-title {
+    font-size: 24px;
+    text-align: left;
+    position: relative;
+    padding: 13px 0;
+}
+
+.main-navigation-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+}
+
+.main-navigation {
+    white-space: nowrap;
+    max-width: 1676px;
+    width: 100%;
+    margin: auto;
+    padding: 0 25px;
+    margin-bottom: 50px;
+}
+
+.main-navigation-list {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: inline-block;
+}
+
+.main-navigation-item {
+    font-size: 24px;
+    letter-spacing: .08em;
+    padding: 10px 30px;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 500;
+}
+
+.navigation-item-bar {
+    border-left: 1px solid #ccc;
+}
+
+.main-navigation-item:hover {
+    color: #FF3300;
+    transition: .15s;
+}
+
+.main-body-min-width {    
+    min-width: 1000px;
+}
+
+.page-logo-width {
+    width: 112px;
+}
+
+.page-navigation-align {
+    float: right;
+    width: calc(100% - 130px);
+}
+
+.page-navigation-list {
+    margin-right: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.page-navigation-item {
+    font-size: 18px;
+    letter-spacing: .08em;
+    padding: 0 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.page-navigation-item-current {
+    font-weight: 700;
+    color: #FF3300;
+}
+
+.page-navigation-item:hover {
+    color: #FF3300;
+    transition: .15s;
+}
+
+.footer-promo {
+    background-color: #444;
+    margin: 50px auto;
+    padding: 5px 0;
+    color: white;
+    font-size: 18px;
+    letter-spacing: .08em;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+    word-spacing: .15em;
+}
+
+.footer-link {
+    width: 30%;
+}
+
+.footer-link-item {
+    padding: 0 10px;
+}
+
+.footer-link-bar {
+    border-left: 1px solid #444;
+}
+
+.footer-copyright {
+    margin: 24px auto;
+    font-size: 12px;
+    margin-bottom: 50px;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-element {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 200px;
+}
+
+.form-search-box {
+    width: 50%;
+    background-color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.form-search {
+    width: 100%;
+    border: 1px solid #aaa;
+    display: inline-block;
+}
+
+.form-search:hover {
+    border: 1px solid rgb(255, 182, 164);
+    transition: 0.5s;
+}
+
+.form-input-search-input {
+    font-family: 'Futura-Lig', 'FuturaLig', 'Century Gothic', 'CenturyGothic', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+    font-size: 16px;
+    height: 60px;
+    width: calc(100% - 50px);
+    padding: 20px;
+    border: none;
+}
+
+.form-input-search-submit-icon {
+    padding: 20px;
+    background: url(../image/submit_search.svg) no-repeat center center;
+    background-size: 30px 30px;
+    cursor: pointer;
+    border: none;
+}
+
+.bottom-border {
+    border-bottom: 1px solid #444;
+}
+
+.page-title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.button {
+    font: inherit;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    line-height: 1.5;
+    padding: 12px 24px;
+    min-height: 44px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-rendering: auto;
+    text-indent: 0px;
+    text-shadow: none;
+    cursor: pointer;
+    font-weight: 600;
+    outline: 0;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #444;
+    transition: background-color .2s;
+    display: inline-block;
+    list-style: none;
+    min-width: 0;
+    word-spacing: normal;
+}
+
+.button:hover {
+    background-color: #FF3300;
+}
+
+.secondary-body {
+    max-width: 800px;
+    padding: 0 10px;
+}
+
+.contact-h2 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.contact-email-form {
+    display: block;
+    max-width: 100%;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin: 24px auto;
+    padding: 20px 0 20px 20px;
+}
+
+.contact-input-info {
+    margin-bottom: 20px;
+    font-size: 14px;
+    height: 44px;
+    vertical-align: middle;
+    width: calc(100% - 20px);
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-input-textarea-height {
+    height: 200px;
+}
+
+.main-bestsellers {
+    margin: 80px auto;
+}
+
+.bestsellers-title {
+    margin-bottom: 50px;
+}
+
+.book-decor {
+    border: 1px solid #ccc;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.book-details {
+    position: relative;
+    margin-left: 5px;
+    margin-right: 42px;
+    height: 260px;
+    padding-top: 30px;
+}
+
+.book-title {
+    font-weight: 700;
+    font-size: 20px;
+    color: #333;
+}
+
+.book-version {
+    font-size: 16px;
+    color: #555;
+}
+
+.book-author {
+    margin-top: 6px;
+    font-size: 12px;
+}
+
+.book-isbn {
+    position: absolute;
+    bottom: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.login-signup-body {
+    max-width: 420px;
+}
+
+.login-signup-min-width {
+    min-width: 0;
+}
+
+.login-signup-email-form {
+    display: block;
+    max-width: 100%;
+}
+
+.login-signup-input-label {
+    margin-top: 20px;
+    font-size: 18px;
+    vertical-align: middle;
+    width: 100%;
+    display: inline-block;
+}
+
+.login-signup-input-info {
+    margin-top: 5px;
+    font-size: 16px;
+    height: 44px;
+    vertical-align: middle;
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.login-forgot {
+    margin-top: 5px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.login-remember {
+    margin-top: 20px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.login-signup-button {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.login-register-box {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.login-register {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 550;
+    display: inline-block;
+}
+
+.login-register:hover {
+    transition: .1s;
+    color: #FF3300;
+}
+
+.signup-agree {
+    margin-top: 20px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.signup-login-box {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.signup-login {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 550;
+    display: inline-block;
+}
+
+.signup-login:hover {
+    transition: .1s;
+    color: #FF3300;
+}
+
+.about {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.about h2 {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.about p {
+    text-align: justify;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 40px;
+    font-size: 18px;
+    letter-spacing: -0.04em;
+    word-spacing: 0.1em;
+}
+
+.terms {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.terms p {
+    text-align: justify;
+    width: 100%;
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: -0.04em;
+    word-spacing: 0.1em;
+}
+
+.button-reset-pswd {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #333;
+}
+
+.button-reset-pswd:hover {
+    background-color: rgb(0, 187, 16);
+}
+
+.button-cancel {
+    margin-top: 20px;
+    width: 100%;
+    color: black;
+    background-color: #ccc;
+}
+
+.button-cancel:hover {
+    background-color: red;
+    color: white;
+}
+
+.account-details {
+    border-top: 1px solid #888;
+    padding-top: 30px;
+    display: inline-block;
+    width: 100%;
+}
+
+.account-section {
+    margin-bottom: 40px;
+}
+
+.account-section h2 {
+    margin-bottom: 10px;
+}
+
+.account-id-email {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.account-id-reset {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    padding: 6px 12px;
+    color: white;
+    background: #444;
+    border-radius: 4px;
+}
+
+.account-id-reset:hover {
+    background: #FF3300;
+    transition: .15s;
+}
+
+.account-order-box {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.account-order-item {
+    padding: 8px 16px;
+}
+
+.account-order-item-seperator {
+    border-top: 1px solid #ccc;
+}
+
+.account-order-date-t {
+    font-size: 14px;
+    color: #555;
+}
+
+.account-order-date {
+    margin-left: 5px;
+    font-size: 14px;
+    color: black;
+}
+
+.account-order-details {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.account-order-number {
+    font-size: 12px;
+    color: #555;
+    vertical-align: top;
+}
+
+.account-order-shipping {
+    margin-top: 5px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.account-order-shipping ready {
+    padding: 4px 8px;
+    color: white;
+    background: dodgerblue;
+    border-radius: 4px;
+}
+
+.account-order-shipping shipped {
+    padding: 4px 8px;
+    color: white;
+    background: rgb(0, 172, 0);
+    border-radius: 4px;
+}
+
+.account-order-shipping delivered {
+    padding: 4px 8px;
+    color: white;
+    background: #444;
+    border-radius: 4px;
+}
+
+.account-order-total-t {
+    font-size: 14px;
+    color: #555;
+}
+
+.account-order-total {
+    margin-left: 5px;
+    font-size: 14px;
+    color: black;
+    font-weight: 700;
+}
+
+.account-order-shipping-fee {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #555;
+    vertical-align: top;
+}
+
+.account-order-item-price-box {
+    margin-top: 8px;
+}
+
+.account-order-item-price-t {
+    font-size: 14px;
+    color: #555;
+}
+
+.account-order-item-price {
+    margin-left: 5px;
+    font-size: 14px;
+    color: black;
+}
+
+.account-order-page {
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+    text-align: right;
+    color: #444;
+}
+
+.cart-details {
+    padding-top: 30px;
+    display: inline-block;
+    width: 100%;
+}
+
+.cart-section {
+    margin-bottom: 40px;
+}
+
+.cart-order-box {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.cart-order-item {
+    padding: 10px 24px;
+}
+
+.cart-order-item-seperator {
+    border-top: 1px solid #ccc;
+}
+
+.cart-order-details {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.cart-remove {
+    text-align: center;
+    width: 120px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    text-transform: lowercase;
+    padding: 2px 4px;
+    color: white;
+    background: #444;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+.cart-remove:hover {
+    background: #FF3300;
+    transition: .2s
+}
+
+.cart-order-item-price-box {
+    margin-top: 8px;
+}
+
+.cart-order-item-price-t {
+    font-size: 14px;
+    color: #555;
+}
+
+.cart-order-item-price {
+    margin-left: 5px;
+    font-size: 20px;
+    color: black;
+}
+
+.cart-checkout {
+    text-align: center;
+    width: 200px;
+    margin: 20px auto;
+    font-size: 18px;
+    padding: 8px 8px;
+    color: white;
+    background: #FF3300;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.cart-checkout:hover {
+    background: black;
+    transition: .25s;
+}
+
+.cart-book {
+    width: 130px;
+}
+
+.cart-book-detail {
+    width: calc(100% - 150px);
+    position: relative;
+    height: 120px;;
+}
+
+.cart-book-decor {
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.cart-order-type buy {
+    text-transform: uppercase;
+    text-align: center;
+    width: 40px;
+    margin: 5px auto;
+    font-size: 10px;
+    padding: 2px 4px;
+    color: white;
+    border-radius: 2px;
+    display: inline-block;
+    background: #FF3300;
+}
+
+.cart-order-type rent {
+    text-transform: uppercase;
+    text-align: center;
+    width: 40px;
+    margin: 5px auto;
+    font-size: 10px;
+    padding: 2px 4px;
+    color: white;
+    border-radius: 2px;
+    display: inline-block;
+    background: green;
+}
+
+.buy-rent-col {
+    margin-top: 10px;
+    width: calc(100% - 20px);
+    display: inline-block;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0 10px;
+}
+
+.buy-rent-col:hover {
+    border: 1px solid #FF3300;
+    transition: 0.2s;
+}
+
+.buy-rent-col-title {
+    font-size: 20px;
+}
+
+.buy-rent-body {    
+    border-top: 1px solid #888;
+    padding-top: 50px;
+    display: inline-block;
+    width: 100%;
+}
+
+.buy-rent-search {
+    margin-top: 50px;
+    width: calc(100% - 100px);
+}
+
+.buy-rent-or {
+    margin-top: 40px;
+    font-size: 36px;
+    color: #444
+}
+
+.buy-rent-find {
+    text-align: center;
+    width: 200px;
+    margin: 20px auto;
+    font-size: 18px;
+    padding: 8px 8px;
+    color: white;
+    background: #333;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.buy-rent-find:hover {
+    background: #FF3300;
+    transition: .2s;
+}
+
+
+.buy-rent-result-details {
+    padding-top: 30px;
+    display: inline-block;
+    width: calc(100% - 100px);
+}
+
+.buy-rent-result-section {
+    margin-bottom: 40px;
+}
+
+.buy-rent-result-order-box {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.buy-rent-result-order-item {
+    padding: 10px 24px;
+}
+
+.buy-rent-result-order-item-seperator {
+    border-top: 1px solid #ccc;
+}
+
+.buy-rent-result-order-details {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.buy-rent-result-remove {
+    text-align: center;
+    width: 100px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    text-transform: lowercase;
+    padding: 2px 4px;
+    color: white;
+    background: #FF3300;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+.buy-rent-result-remove:hover {
+    background: #333;
+    transition: .2s
+}
+
+.buy-rent-result-order-item-price-box {
+    margin-top: 8px;
+}
+
+.buy-rent-result-order-item-price-t {
+    font-size: 14px;
+    color: #555;
+}
+
+.buy-rent-result-order-item-price {
+    margin-left: 5px;
+    font-size: 20px;
+    color: black;
+}
+
+.buy-rent-result-book {
+    width: 130px;
+}
+
+.buy-rent-result-book-detail {
+    width: calc(100% - 150px);
+    position: relative;
+    height: 120px;;
+}
+
+.buy-rent-result-book-decor {
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.buy-rent-result-box {
+    border-top: 1px solid #333;
+    padding-top: 30px;
+    margin-top: 84px;
+}
+
+.buy-rent-result-t {
+    margin-left: 50px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.buy-rent-gotocart {
+    margin-right: 50px;
+    text-align: center;
+    width: 200px;
+    margin: 20px auto;
+    font-size: 18px;
+    padding: 8px 8px;
+    color: white;
+    background: #444;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.buy-rent-gotocart:hover {
+    background-color: black;
+    transition: 0.2s;
+}
+
+
+
+
+
+
+/* added by Aaron */
+
+
+.checkout-row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.checkout-col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+}
+
+.checkout-col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+}
+
+.checkout-col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+}
+
+.checkout-col-25,
+.checkout-col-50,
+.checkout-col-75 {
+    padding: 0 16px;
+}
+
+.checkout-container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+.checkout-input-text {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.checkout-label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.checkout-icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+
+hr {
+    border: 1px solid lightgrey;
+}
+
+.checkout-price {
+    float: right;
+    color: grey;
+}
+
+.checkout-button {
+    margin-top: 20px;
+    font: inherit;
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    line-height: 1.5;
+    padding: 12px 24px;
+    min-height: 44px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-rendering: auto;
+    text-indent: 0px;
+    text-shadow: none;
+    cursor: pointer;
+    font-weight: 600;
+    outline: 0;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: rgb(56, 179, 60);
+    transition: background-color .2s;
+    display: inline-block;
+    list-style: none;
+    min-width: 0;
+    word-spacing: normal;
+}
+
+.checkout-button:hover {
+    background-color: #333;
+    transition: 0.3s;
+}
+
+/* added by Guojing */

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="res/css/style-main.css">
+    <title>Buy - JWC Bookstore</title>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="main-body-width row">
+                <div class="text-left col-2">
+                    <div class="topbar-ele-wrapper">
+                        <p><a href="./index.html" target="_top">Huskie saves on books!</a></p>
+                    </div>
+                </div>
+                <div class="text-right col-2 text-uppercase">
+                    <div class="topbar-ele-wrapper topbar-cart">
+                        <a href="./cart.html" target="_blank"><img src="./res/image/shopping_cart.png" alt="cart" height="20px"></a>
+                    </div>
+                    <div class="topbar-ele-wrapper">
+                        <p><a href="./index.html" target="_top">Logout</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-border">
+            <div class="main-body-width row">
+                <div class="text-left col-2 page-logo-width">
+                    <h1 class="header-second-title"><a href="./index.html" target="_blank"><span class="text-shine">JWC</span>books</a></h1>
+                </div>
+                <div class="text-right col-2 page-navigation-align">
+                    <div class="text-right">
+                        <nav>
+                            <ul class="page-navigation-list">
+                                <li class="page-navigation-item"><a href="./buy.html" target="_top">BUY</a></li>
+                                <li class="page-navigation-item navigation-item-bar"><a href="./rent.html" target="_top">RENT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="page-body-top"></div>    
+
+    <div class="page-body-padding main-body-width align-center">
+        <div class="text-left page-title">
+            <h2 class="text-uppercase">Buy books</h1>
+        </div>
+
+        <div class="row buy-rent-body">
+
+            <div class="col-3">
+                <div class="buy-rent-col-title">
+                    <span>Department</span>
+                </div>
+                <select class="buy-rent-col" name="DEPARTMENT">DEPARTMENT
+                    <option value="Accounting">Accounting</option>
+                    <option value="Management">Management</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="MBA Program">MBA Program</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Operations Management and Information Systems (OMIS)">Operations Management and Information Systems (OMIS)</option>
+                </select>
+            </div>
+    
+            <div class="col-3">
+                <div class="buy-rent-col-title">
+                    <span>Course Code</span>
+                </div>
+                <select class="buy-rent-col" name="COURSE">COURSE
+                    <option value="ACCY206">ACCY 206</option>
+                    <option value="ACCY207">ACCY 207</option>
+                    <option value="ACCY288">ACCY 288</option>
+                    <option value="ACCY207">ACCY 306</option>
+                    <option value="ACCY288">ACCY 307</option>
+                    <option value="ACCY207">ACCY 310</option>
+                    <option value="ACCY288">ACCY 320</option>
+                    <option value="ACCY207">ACCY 331</option>
+                    <option value="ACCY288">ACCY 332</option>
+                    <option value="ACCY360">ACCY 360</option>
+    
+                    <option value="MGMT217">MGMT 217</option>
+                    <option value="MGMT227">MGMT 227</option> 
+                    <option value="MGMT311">MGMT 311</option>
+                    <option value="MGMT327">MGMT 327</option>
+                    <option value="MGMT333">MGMT 333</option>
+                    <option value="MGMT335">MGMT 335</option> 
+                    <option value="MGMT346">MGMT 346</option>
+                    <option value="MGMT355">MGMT 355</option>
+    
+                    <option value="OMIS327">OMIS 327</option>
+                    <option value="OMIS450">OMIS 450</option>
+                    <option value="OMIS475">OMIS 475</option> 
+                    <option value="OMIS460">OMIS 460</option>
+    
+                    <option value="Administration">Administration</option>
+                </select>
+            </div>
+    
+            <div class="col-3">
+                <div class="buy-rent-col-title">
+                    <span>Section</span>
+                </div>
+                <select class="buy-rent-col" name="SECTION">SECTION 
+                    <option value="0001">0001</option>
+                    <option value="0002">0002</option>
+                    <option value="0003">0003</option>
+                    <option value="0004">0004</option>
+                    <option value="0005">0005</option>
+                    <option value="0006">0006</option>
+    
+                </select> 
+            </div>
+        </div>
+
+        <div class="text-center">
+            <span class="buy-rent-find">
+                find books
+            </span>
+        </div>
+
+        <div class="text-center buy-rent-or">
+            or... search directly
+        </div>
+
+        
+        <div class="buy-rent-search align-center">
+            <form class="form-search">
+                <input class="form-input-search-input" type="search" name="search" id="search" placeholder="ISBN, Book title, Author..." aria-label="Search for">
+                <input class="form-input-search-submit-icon vertical-center" type="submit" aria-label="Submit input" value="">
+            </form>
+        </div>
+
+        <div class="buy-rent-result-box">
+            <span class="buy-rent-result-t">Result</span>            
+        </div>
+
+        <div class="text-center">
+            <div class="align-center buy-rent-result-details">
+                <div class="buy-rent-result-section">
+                    <div class="buy-rent-result-order-box text-arial">
+                        <div class="row buy-rent-result-order-item">
+                            <div class="col-2">
+                                <div class="row">
+                                    <div class="col-2 buy-rent-result-book">
+                                        <img class="buy-rent-result-book-decor" src="./res/image/books/9780073377834-Service_Management-6th-James_A_Fitzsimmons.jpg" alt="9780073377834-Service_Management-6th-James_A_Fitzsimmons" width="100px" height="120px">
+                                    </div>
+                                    <div class="col-2 buy-rent-result-book-detail">
+                                        <div class="buy-rent-result-order-details">
+                                            Service Management / 6th Edition / James A. Fitzsimmons / ISBN: 9780073377834
+                                        </div>
+                                        <a href="./cart.html">
+                                            <span class="buy-rent-result-remove">add to cart</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 text-right">
+                                <div class="buy-rent-result-order-item-price-box">
+                                    <span class="buy-rent-result-order-item-price-t">Item price:</span>
+                                    <span class="buy-rent-result-order-item-price">US $153.50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-right">
+                <a href="./cart.html" target="_top">
+                    <div class="buy-rent-gotocart">
+                        Go to Cart
+                    </div>
+                </a>
+            </div>
+    </div>
+
+    <footer>
+        <div class="footer-promo text-center text-uppercase">
+            <p>free standard shipping over $49.99</p>
+        </div>
+        <div class="main-body-width align-center">
+            <div class="row footer-link text-uppercase">
+                <div class="text-right col-2 footer-link-item">
+                    <p><a href="./contact.html" target="_blank">Contact us</a></p>
+                </div>
+                <div class="text-left col-2 footer-link-item footer-link-bar">
+                    <p><a href="./about.html" target="_blank">About us</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="main-body-width align-center text-center footer-copyright">
+            <p>Copyright &copy; 2019 Yuzhu Wan & Guojing Chen & Haoran Ji. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
