@@ -9,7 +9,6 @@ body {
     color: #333333;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     line-height: 1.2;
-    min-width: 1000px;
     cursor: default;
 }
 
@@ -190,7 +189,7 @@ input[type="checkbox"] {
 .main-navigation-list {
     margin: 0;
     padding: 0;
-    width: calc(100% - 88px);
+    width: 100%;
     display: inline-block;
 }
 
@@ -207,6 +206,19 @@ input[type="checkbox"] {
     transition: .15s;
 }
 
+.main-body-min-width {    
+    min-width: 1000px;
+}
+
+.page-logo-width {
+    width: 112px;
+}
+
+.page-navigation-align {
+    float: right;
+    width: calc(100% - 130px);
+}
+
 .page-navigation-list {
     margin-right: 0;
     padding: 0;
@@ -216,7 +228,7 @@ input[type="checkbox"] {
 .page-navigation-item {
     font-size: 18px;
     letter-spacing: .08em;
-    margin: 0 30px;
+    margin: 0 20px;
     display: inline-block;
     vertical-align: top;
 }
@@ -344,8 +356,9 @@ input[type="checkbox"] {
     background-color: #FF3300;
 }
 
-.contact-body {
-    width: 800px;
+.secondary-body {
+    max-width: 800px;
+    padding: 0 10px;
 }
 
 .contact-h2 {
@@ -422,7 +435,11 @@ input[type="checkbox"] {
 }
 
 .login-signup-body {
-    width: 420px;
+    max-width: 420px;
+}
+
+.login-signup-min-width {
+    min-width: 0;
 }
 
 .login-signup-email-form {
